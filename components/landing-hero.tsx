@@ -17,7 +17,7 @@ export const LandingHero = () => {
                     className="brightness-75 z-[-1]"
                 />
             </div>
-            <div className="text-center lg:text-left space-y-5 text-5xl xl:text-5xl 2xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
+            <div className="text-center lg:text-left space-y-5 text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
                 <h1 className="font-semibold w-full lg:w-[35vw]">
                     Expertos en Correas Transportadoras y Mantención de Equipos Mineros
                 </h1>
@@ -31,23 +31,23 @@ export const LandingHero = () => {
                     Contáctanos
                 </Button>
             </div>
-            <div className="mt-auto w-full flex flex-row justify-between z-[1] pb-8 border-t pt-3 border-zinc-300">
+            <div className="mt-auto w-full hidden md:flex flex-row justify-between z-[1] pb-8 border-t pt-3 border-zinc-300">
                 <div className="flex items-start space-x-2">
-                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] flex-shrink-0 mt-1" />
                     <div className="flex flex-col">
                         <span className="text-sm md:text-base font-semibold">Servicios de Corredoras</span>
                         <span className="text-sm md:text-base text-gray-300">Optimización y mantenimiento de sistemas de transporte minero</span>
                     </div>
                 </div>
                 <div className="flex items-start space-x-2">
-                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] flex-shrink-0 mt-1" />
                     <div className="flex flex-col">
                         <span className="text-sm md:text-base font-semibold">Mantención de Equipos</span>
                         <span className="text-sm md:text-base text-gray-300">Servicio integral para maquinaria y equipos mineros</span>
                     </div>
                 </div>
                 <div className="flex items-start space-x-2">
-                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] flex-shrink-0 mt-1" />
                     <div className="flex flex-col">
                         <span className="text-sm md:text-base font-semibold">Soluciones Personalizadas</span>
                         <span className="text-sm md:text-base text-gray-300">Adaptamos nuestros servicios a las necesidades específicas de su operación</span>

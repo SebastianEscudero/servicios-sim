@@ -25,9 +25,9 @@ export function NavigationMenuLanding() {
                     >
                         <Button
                             className='justify-start my-[3px] text-[16px] mr-2'
-                            variant={pathname === "/about-us" ? 'default' : 'ghost'}
+                            variant={pathname === "/" ? 'sim' : 'ghost'}
                         >
-                            Inicios
+                            Inicio
                         </Button>
                     </NavigationMenuLink>
                     <NavigationMenuLink
@@ -35,7 +35,7 @@ export function NavigationMenuLanding() {
                     >
                         <Button
                             className='justify-start my-[3px] text-[16px]'
-                            variant={pathname === "/faq" ? 'default' : 'ghost'}
+                            variant={pathname === "/nosotros" ? 'sim' : 'ghost'}
                         >
                             Nosotros
                         </Button>
@@ -45,7 +45,7 @@ export function NavigationMenuLanding() {
                     >
                         <Button
                             className='justify-start my-[3px] text-[16px]'
-                            variant={pathname === "/faq" ? 'default' : 'ghost'}
+                            variant={pathname === "/contacto" ? 'sim' : 'ghost'}
                         >
                             Contacto
                         </Button>

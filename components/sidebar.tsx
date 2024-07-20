@@ -16,8 +16,8 @@ const Sidebar = ({
                 <div className="flex items-center pl-8">
                     <div className="mr-4">
                         <Image
-                            width={75}
-                            height={75}
+                            width={100}
+                            height={100}
                             alt="Logo"
                             src="/logo.png"
                         />
@@ -60,16 +60,9 @@ const Sidebar = ({
                 </div>
             </div>
             <div className="pb-4 px-2">
-                <Link href="https://www.instagram.com/disenoprintchicureo/">
-                    <Button variant="instagram" className="md:text-lg p-4 md:p-6 w-full mb-2">
-                        Instagram <FaInstagram className="ml-2" />
-                    </Button>
-                </Link>
-                <Link href = "http://api.whatsapp.com/send?phone=56988298224">
-                    <Button variant="whatsapp" className="md:text-lg p-4 md:p-6 w-full">
-                        Whatsapp <FaWhatsapp className="ml-2" />
-                    </Button>
-                </Link>
+                <Button variant="sim" className="md:text-lg p-4 md:p-6 w-full">
+                    Contáctanos
+                </Button>
             </div>
         </div>
     );
