@@ -19,7 +19,7 @@ export const LandingHero = () => {
             </div>
             <div className="text-center lg:text-left space-y-5 text-5xl xl:text-5xl 2xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
                 <h1 className="font-semibold w-full lg:w-[35vw]">
-                    Expertos en Corredoras y Mantención de Equipos Mineros
+                    Expertos en Correas Transportadoras y Mantención de Equipos Mineros
                 </h1>
                 <p className="text-xl text-zinc-100 w-full lg:w-[35vw]">
                     Optimizamos la productividad de su operación minera con servicios especializados de corredoras y mantención de equipos. Descubre cómo podemos impulsar la eficiencia de su proyecto.
