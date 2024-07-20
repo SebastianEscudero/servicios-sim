@@ -31,6 +31,7 @@ const buttonVariants = cva(
         business: "bg-[#1C1C1E] text-white hover:text-accent-foreground hover:bg-accent/90",
         instagram: "bg-[#E1306C] text-white hover:bg-opacity-90",
         whatsapp: "bg-[#25D366] text-white hover:bg-opacity-90",
+        sim: "bg-[#F16F0F] text-white hover:bg-opacity-90",
       },
       size: {
         default: "h-10 px-4 py-2",

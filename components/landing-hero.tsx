@@ -1,72 +1,58 @@
 "use client";
 
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { Button } from "./ui/button"
+import { ChevronRightCircle } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { Star } from "lucide-react";
-import { Avatar, AvatarImage } from "./ui/avatar";
+import { Button } from "./ui/button";
 
-export const LandingHero = () => {    
+export const LandingHero = () => {
     return (
-        <div className="text-[#1c1c1e] pt-16 flex flex-col md:flex-row md:space-x-10 xl:space-x-28 xl:mx-[15%] lg:mx-[10%] md:mx-[8%] mx-[5%] items-center md:text-left text-center">
-            <div className="space-y-5 flex-1 text-6xl xl:text-7xl 2xl:text-8xl md:mb-0 mb-5">
-                <h1 className="font-sans">
-                    jhgghjgj
+        <div className="text-white h-[90vh] flex flex-col xl:px-[15%] lg:px-[10%] md:px-[8%] px-[5%] items-center md:text-left text-center">
+            <div className="absolute top-0 left-0 w-full h-full">
+                <Image
+                    src="/hero-image.jpg"
+                    alt="Hero"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                    className="brightness-75 z-[-1]"
+                />
+            </div>
+            <div className="text-center lg:text-left space-y-5 text-5xl xl:text-5xl 2xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
+                <h1 className="font-semibold w-full lg:w-[35vw]">
+                    Expertos en Corredoras y Mantención de Equipos Mineros
                 </h1>
-                <p className="text-lg text-zinc-800 mx-auto">
-                    Hola! Soy la Ale! Mamá emprendedora y Diseñadora Gráfica de Impresiones, Estampados y Regalos Personalizados.
+                <p className="text-xl text-zinc-100 w-full lg:w-[35vw]">
+                    Optimizamos la productividad de su operación minera con servicios especializados de corredoras y mantención de equipos. Descubre cómo podemos impulsar la eficiencia de su proyecto.
                 </p>
-                <span className="space-x-3">
-                    <Link href="https://www.instagram.com/disenoprintchicureo/">
-                        <Button variant="instagram" className="md:text-lg p-4 md:p-6">
-                            Instagram <FaInstagram className="ml-2 w-6 h-6" />
-                        </Button>
-                    </Link>
-                    <Link href = "http://api.whatsapp.com/send?phone=56988298224">
-                        <Button variant="whatsapp" className="md:text-lg p-4 md:p-6">
-                            Whatsapp <FaWhatsapp className="ml-2 w-6 h-6" />
-                        </Button>
-                    </Link>
-                </span>
-                <div className="flex sm:flex-row flex-col md:space-y-0 space-y-3 items-center space-x-4 mt-6 md:justify-start justify-center">
-                    <div className="flex space-x-1">
-                        <Avatar>
-                            <AvatarImage src="/clientes/cliente1.jpg" />
-                        </Avatar>
-                        <Avatar>
-                            <AvatarImage src="/clientes/cliente2.jpg" />
-                        </Avatar>
-                        <Avatar>
-                            <AvatarImage src="/clientes/cliente3.jpg" />
-                        </Avatar>
-                        <Avatar>
-                            <AvatarImage src="/clientes/cliente4.jpg" />
-                        </Avatar>
-                        <Avatar>
-                            <AvatarImage src="/clientes/cliente5.jpg" />
-                        </Avatar>
-                    </div>
-                    <div className="text-right">
-                        <div className="flex justify-end">
-                            <Star fill="#EAB308"/>
-                            <Star fill="#EAB308"/>
-                            <Star fill="#EAB308"/>
-                            <Star fill="#EAB308"/>
-                            <Star fill="#EAB308"/>
-                        </div>
-                        <p className="text-sm whitespace-nowrap">+100 clientes felices</p>
+                <Button
+                    variant="sim"
+                    className="lg:w-40 sm:w-1/2 w-full text-xl py-6"
+                >
+                    Contáctanos
+                </Button>
+            </div>
+            <div className="mt-auto w-full flex flex-row justify-between z-[1] pb-8 border-t pt-3 border-zinc-300">
+                <div className="flex items-start space-x-2">
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <div className="flex flex-col">
+                        <span className="text-sm md:text-base font-semibold">Servicios de Corredoras</span>
+                        <span className="text-sm md:text-base text-gray-300">Optimización y mantenimiento de sistemas de transporte minero</span>
                     </div>
                 </div>
-            </div>
-            <div className="flex-1 w-full rounded-sm">
-                <Image
-                    src="/landing-image.jpg"
-                    alt="Logo"
-                    className="w-full"
-                    width={1920}
-                    height={1080}
-                />
+                <div className="flex items-start space-x-2">
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <div className="flex flex-col">
+                        <span className="text-sm md:text-base font-semibold">Mantención de Equipos</span>
+                        <span className="text-sm md:text-base text-gray-300">Servicio integral para maquinaria y equipos mineros</span>
+                    </div>
+                </div>
+                <div className="flex items-start space-x-2">
+                    <ChevronRightCircle size={24} className="text-white fill-[#F16F0F] mt-1" />
+                    <div className="flex flex-col">
+                        <span className="text-sm md:text-base font-semibold">Soluciones Personalizadas</span>
+                        <span className="text-sm md:text-base text-gray-300">Adaptamos nuestros servicios a las necesidades específicas de su operación</span>
+                    </div>
+                </div>
             </div>
         </div>
     )

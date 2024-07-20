@@ -7,7 +7,7 @@ const LandingLayout = ({
     children: React.ReactNode;
 }) => {
     return ( 
-        <main className= "font-sans bg-[#D7F0ED]">
+        <main className= "font-sans">
             <div className="mx-auto h-full">
                 <LandingNavbar />
                 {children}

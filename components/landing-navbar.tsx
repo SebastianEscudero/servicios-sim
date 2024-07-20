@@ -4,41 +4,37 @@ import Image from "next/image";
 import Link from "next/link";
 import { NavigationMenuLanding } from "./navigation-menu";
 import { MobileSidebar } from "./mobile-sidebar";
-import { Button } from "./ui/button";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Mail, Phone } from "lucide-react";
 
 export const LandingNavbar = () => {
     return (
-        <nav className="py-3 bg-[#FFFFFF] border-b sticky top-0 z-50">
-            <div className="flex items-center justify-between xl:mx-[5%] lg:mx-[3%] md:mx-[2%] mx-[1%]">
+        <nav className="py-3 bg-white shadow-custom-1 sticky top-0 z-50 h-[71px]">
+            <div className="flex items-center justify-between xl:mx-[10%] lg:mx-[7%] md:mx-[5%] mx-[5%] h-[40px]">
                 <div className="flex items-center">
                     <MobileSidebar />
                     <Link href="/" className="flex items-center mr-2 ml-2">
-                        <div className="mr-4">
+                        <div className="mr-4 h-full w-full">
                             <Image
-                                height={65}
-                                width={65}
+                                height={40}
+                                width={120}
                                 alt="Logo"
-                                src="/logo.png"    
+                                src="/logo.png"
+                                loading="lazy"
+                                objectFit="contain"
                             />
                         </div>
-                        <p className="text-2xl font-bold text-[#38322C] font-cursive">
-                            Diseño Print Chicureo
-                        </p>
                     </Link>
                     <NavigationMenuLanding />
                 </div>
-                <div className="hidden sm:flex items-center gap-x-2">
-                    <Link href="https://www.instagram.com/disenoprintchicureo/">
-                        <Button variant="instagram" className="md:text-lg p-4 md:p-6">
-                            <FaInstagram className="w-6 h-6"/>
-                        </Button>
-                    </Link>
-                    <Link href = "http://api.whatsapp.com/send?phone=56988298224">
-                        <Button variant="whatsapp" className="md:text-lg p-4 md:p-6">
-                            <FaWhatsapp className="w-6 h-6"/>
-                        </Button>
-                    </Link>
+                <div className="flex sm:flex-row flex-col items-center space-x-8">
+                    <div className="flex flex-row items-center justify-center">
+                        <Mail size={20} className="text-white fill-[#565656]" />
+                        <p className="ml-3 sm:text-base text-sm text-[#565656]">jrebolledo@serviciossim.cl</p>
+                    </div>
+                    <div className="flex flex-row items-center justify-center">
+                        <Phone size={16} className="text-[#565656] fill-[#565656]" />
+                        <p className="ml-3 sm:text-base text-sm text-[#565656]">+56 997460504</p>
+                    </div>
                 </div>
             </div>
         </nav>

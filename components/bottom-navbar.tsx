@@ -74,7 +74,7 @@ export const BotNavbar = () => {
                             alt="Logo"
                         />
                         <p className="ml-1">
-                            Diseño Print Chicureo
+                            
                         </p>
                     </div>
                     <p className="ml-2 mt-3">

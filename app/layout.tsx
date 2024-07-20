@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://www.disenoprintchicureo.cl"),
-  title: "Diseño, Estampado, Impresiones | Diseño Print Chicureo",
+  title: "Diseño, Estampado, Impresiones | ",
   description: "Hola! Soy la Ale! Diseñadora Gráfica Impresiones /Estampados/ Regalos Personalizados Tienda ONLINE Tus Ideas! Las Imprimo. Papeleria CREATIVA X DM.",
-  keywords: ["estampados chicureo", "impresiones chicureo", "diseño print chicureo", "diseño gráfico chicureo", "diseño gráfico", "impresiones", "estampados", "regalos personalizados", "tienda online", "diseño print"],
+  keywords: ["estampados chicureo", "impresiones chicureo", "", "diseño gráfico chicureo", "diseño gráfico", "impresiones", "estampados", "regalos personalizados", "tienda online", "diseño print"],
   alternates: {
     canonical: "http://www.disenoprintchicureo.cl",
   },

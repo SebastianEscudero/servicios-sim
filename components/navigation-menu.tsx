@@ -27,7 +27,7 @@ export function NavigationMenuLanding() {
                             className='justify-start my-[3px] text-[16px] mr-2'
                             variant={pathname === "/about-us" ? 'default' : 'ghost'}
                         >
-                            ¿Quienés somos?
+                            Inicios
                         </Button>
                     </NavigationMenuLink>
                     <NavigationMenuLink
@@ -37,7 +37,17 @@ export function NavigationMenuLanding() {
                             className='justify-start my-[3px] text-[16px]'
                             variant={pathname === "/faq" ? 'default' : 'ghost'}
                         >
-                            Preguntas frecuentes
+                            Nosotros
+                        </Button>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink
+                        href={"/faq"}
+                    >
+                        <Button
+                            className='justify-start my-[3px] text-[16px]'
+                            variant={pathname === "/faq" ? 'default' : 'ghost'}
+                        >
+                            Contacto
                         </Button>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -45,29 +55,3 @@ export function NavigationMenuLanding() {
         </NavigationMenu>
     )
 }
-
-const ListItem = React.forwardRef<
-    React.ElementRef<"a">,
-    React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-    return (
-        <li>
-            <NavigationMenuLink asChild>
-                <a
-                    ref={ref}
-                    className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground hover:underline",
-                        className
-                    )}
-                    {...props}
-                >
-                    <div className="text-sm font-medium leading-none">{title}</div>
-                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        {children}
-                    </p>
-                </a>
-            </NavigationMenuLink>
-        </li>
-    )
-})
-ListItem.displayName = "ListItem"

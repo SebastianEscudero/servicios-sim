@@ -1,4 +1,4 @@
-// File: /Users/sebastianescudero/Desktop/Servicios-Sim/app/(landing)/layout.tsx
+// File: C:\Users\sebae\Desktop\servicios-sim\app\(landing)\layout.tsx
 import * as entry from '../../../../app/(landing)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

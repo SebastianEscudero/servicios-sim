@@ -23,7 +23,7 @@ const Sidebar = ({
                         />
                     </div>
                     <h1 className="text-2xl font-cursive font-bold">
-                        Diseño Print Chicureo
+                        
                     </h1>
                 </div>
                 <div className="space-y-1 mt-2">
