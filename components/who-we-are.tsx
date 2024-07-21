@@ -40,7 +40,17 @@ export const WhoWeAre = () => {
                             </div>
                         </div>
                         <Link href={"/dashboard/"} title="Contáctanos" className="px-8">
-                            <Button variant="sim" className="p-6 text-lg w-full md:w-auto lg:mt-0 mt-4">
+                            <Button 
+                                variant="sim" 
+                                className="p-6 text-lg w-full md:w-auto lg:mt-0 mt-4"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    const contactSection = document.getElementById('contact');
+                                    if (contactSection) {
+                                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
+                            >
                                 Contáctanos
                             </Button>
                         </Link>

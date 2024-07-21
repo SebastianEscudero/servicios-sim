@@ -30,26 +30,19 @@ export function NavigationMenuLanding() {
                             Inicio
                         </Button>
                     </NavigationMenuLink>
-                    <NavigationMenuLink
-                        href={"/faq"}
-                    >
-                        <Button
-                            className='justify-start my-[3px] text-[16px]'
-                            variant={pathname === "/nosotros" ? 'sim' : 'ghost'}
-                        >
-                            Nosotros
-                        </Button>
-                    </NavigationMenuLink>
-                    <NavigationMenuLink
-                        href={"/faq"}
-                    >
                         <Button
                             className='justify-start my-[3px] text-[16px]'
                             variant={pathname === "/contacto" ? 'sim' : 'ghost'}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const contactSection = document.getElementById('contact');
+                                if (contactSection) {
+                                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                         >
                             Contacto
                         </Button>
-                    </NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>

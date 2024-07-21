@@ -3,6 +3,7 @@
 import { ChevronRightCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export const LandingHero = () => {
     return (
@@ -27,6 +28,13 @@ export const LandingHero = () => {
                 <Button
                     variant="sim"
                     className="lg:w-40 sm:w-1/2 w-full text-xl py-6"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        const contactSection = document.getElementById('contact');
+                        if (contactSection) {
+                            contactSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
                 >
                     Contáctanos
                 </Button>

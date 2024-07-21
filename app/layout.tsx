@@ -5,12 +5,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://www.disenoprintchicureo.cl"),
-  title: "Diseño, Estampado, Impresiones | ",
-  description: "Hola! Soy la Ale! Diseñadora Gráfica Impresiones /Estampados/ Regalos Personalizados Tienda ONLINE Tus Ideas! Las Imprimo. Papeleria CREATIVA X DM.",
-  keywords: ["estampados chicureo", "impresiones chicureo", "", "diseño gráfico chicureo", "diseño gráfico", "impresiones", "estampados", "regalos personalizados", "tienda online", "diseño print"],
+  metadataBase: new URL("https://www.serviciossim.cl/"),
+  title: "Correas Transportadoras para Minería | SIM",
+  description: "En SIM nos especializamos en la mantenimiento y arriendo de correas transportadoras para minería chilena. Contáctanos para más información.",
+  keywords: ["correas transportadoras", "minería", "mantenimiento", "arriendo", "mineria chile", "correas transporadoras chile", "correas transportadoras minería"],
   alternates: {
-    canonical: "http://www.disenoprintchicureo.cl",
+    canonical: "https://www.serviciossim.cl/",
   },
   robots: {
     index: true,
