@@ -4,9 +4,9 @@ const SolutionsSection = () => {
   return (
     <div className="lg:py-10 mb-12 xl:mx-[10%] mx-[2%] text-[#1c1c1e] p-4">
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-2">Our Solutions for Enhanced Safety and Efficiency</h2>
+        <h2 className="text-3xl font-bold mb-2">Nuestras Soluciones para Optimizar su Operación</h2>
         <p className="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Nullam euismod, nunc nec
+          En Servicios Sim, ofrecemos una gama completa de servicios especializados para mantener y mejorar sus sistemas de transporte y equipos industriales.
         </p>
       </div>
 
@@ -18,19 +18,19 @@ const SolutionsSection = () => {
             </svg>
           </div>
           <div className="text-4xl mb-4">🏗️</div>
-          <h3 className="text-xl font-semibold mb-2">Collision Avoidance</h3>
-          <p className="text-sm">Enhance safety and prevent accidents with our advanced collision avoidance systems, designed for mining and industrial equipment to minimize the risk of vehicle interactions.</p>
+          <h3 className="text-xl font-semibold mb-2">Correas Transportadoras</h3>
+          <p className="text-sm">Servicios completos de mantención, montaje, reparación y empalmes de correas transportadoras para asegurar el funcionamiento óptimo de sus sistemas de transporte.</p>
         </div>
         <SolutionCard
-          title="Fatigue Management"
-          description="Address the critical issue of operator fatigue with our fatigue management solutions, utilizing innovative technology to monitor and manage fatigue levels for safer operations."
-          icon="💺"
+          title="Revestimientos en Frío"
+          description="Protección duradera para superficies de trabajo en correas transportadoras, utilizando materiales de alta resistencia para prolongar la vida útil de sus equipos."
+          icon="🛡️"
           color="bg-gray-200"
         />
         <SolutionCard
-          title="Remote Analytics"
-          description="Leverage the power of remote analytics to gain real-time insights into your operations, enabling data-driven decisions for improved efficiency and safety."
-          icon="🚧"
+          title="Correas Electroimán"
+          description="Diseño y fabricación de correas transportadoras con electroimán, adaptadas a las necesidades específicas de su operación para un desempeño óptimo."
+          icon="🧲"
           color="bg-gray-200"
         />
       </div>

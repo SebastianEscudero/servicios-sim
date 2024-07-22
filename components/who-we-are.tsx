@@ -11,32 +11,32 @@ export const WhoWeAre = () => {
                             Proporcionando soluciones confiables
                         </h2>
                         <h3 className="text-zinc-500 px-8 text-lg xl:text-xl text-left">
-                            SIM Servicios Industriales Mineros es líder en 
-                            proporcionar soluciones para correas transportadoras 
-                            y mantención de equipos en la industria minera.
+                            Servicios SIM es una empresa especializada en la mantención, 
+                            montaje, reparación y empalmes de cintas o correas transportadoras, 
+                            principalmente para los sectores industrial y minero.
                         </h3>
                         <h2 className="px-8 text-2xl xl:text-3xl text-left">
-                            Nuestros Principios Fundamentales:
+                            Nuestros Servicios Principales:
                         </h2>
                         <div className="px-8 text-xl xl:text-2xl text-left">
-                            Soluciones Personalizadas:
+                            Correas Transportadoras:
                             <div className="flex flex-col space-y-2 text-zinc-600 justify-start text-sm xl:text-base mt-2">
-                                <span>✓ Adaptadas a las necesidades únicas de cada operación.</span>
-                                <span>✓ Diseñadas para mejorar la eficiencia y durabilidad.</span>
+                                <span>✓ Mantención y montaje de correas transportadoras</span>
+                                <span>✓ Reparación y empalmes de correas transportadoras</span>
                             </div>
                         </div>
                         <div className="px-8 text-xl xl:text-2xl text-left">
-                            Experiencia en Campo y Soporte Técnico:
+                            Soluciones Especializadas:
                             <div className="flex flex-col space-y-2 text-zinc-600 justify-start text-sm xl:text-base mt-2">
-                                <span>✓ Apoyo integral desde la instalación hasta el mantenimiento.</span>
-                                <span>✓ Asegurando que los equipos cumplan con especificaciones.</span>
+                                <span>✓ Revestimientos en frío para protección de superficies</span>
+                                <span>✓ Fabricación de correas electroimán personalizadas</span>
                             </div>
                         </div>
                         <div className="px-8 text-xl xl:text-2xl text-left">
-                            Desarrollo de Mejores Prácticas y Colaboración:
+                            Asesoría Técnica:
                             <div className="flex flex-col space-y-2 text-zinc-600 justify-start text-sm xl:text-base mt-2">
-                                <span>✓ Contribución activa al desarrollo de guías de seguridad.</span>
-                                <span>✓ Colaboración con clientes y grupos industriales efectiva.</span>
+                                <span>✓ Optimización del uso y mantenimiento de correas transportadoras</span>
+                                <span>✓ Mejora de la eficiencia operativa y reducción de costos</span>
                             </div>
                         </div>
                         <Link href={"/dashboard/"} title="Contáctanos" className="px-8">

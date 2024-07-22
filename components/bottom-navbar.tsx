@@ -6,7 +6,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export const BotNavbar = () => {
     return (
         <footer className="bg-[#1C1C1E] text-white py-20">
-            <div className="flex md:text-left text-center md:space-y-0 space-y-5 md:flex-row flex-col xl:mx-[15%] mx-[10%] text-xl justify-between pb-10 pt-10 md:space-x-4">
+            <div className="flex text-left md:space-y-0 space-y-5 md:flex-row flex-col xl:mx-[15%] mx-[10%] text-xl justify-between pb-10 pt-10 md:space-x-4">
                 <div className="flex flex-col space-y-4">
                     <Image
                         src="/logo.png"

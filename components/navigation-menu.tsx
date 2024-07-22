@@ -20,16 +20,19 @@ export function NavigationMenuLanding() {
         <NavigationMenu className="hidden lg:flex lg:flex-col">
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuLink
-                        href={"/about-us"}
-                    >
                         <Button
                             className='justify-start my-[3px] text-[16px] mr-2'
                             variant={pathname === "/" ? 'sim' : 'ghost'}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const contactSection = document.getElementById('inicio');
+                                if (contactSection) {
+                                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                         >
                             Inicio
                         </Button>
-                    </NavigationMenuLink>
                         <Button
                             className='justify-start my-[3px] text-[16px]'
                             variant={pathname === "/contacto" ? 'sim' : 'ghost'}
