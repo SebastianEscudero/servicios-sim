@@ -19,10 +19,10 @@ export const LandingHero = () => {
             </div>
             <div className="text-center lg:text-left space-y-5 text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
                 <h1 className="font-semibold w-full lg:w-[35vw]">
-                    Expertos en Correas Transportadoras y Mantención de Equipos Industriales y Mineros
+                    Correas Transportadoras
                 </h1>
                 <p className="text-xl text-zinc-100 w-full lg:w-[35vw]">
-                   Optimizamos la productividad de su operación con soluciones integrales en mantención, montaje, reparación y empalmes de correas transportadoras. Descubra cómo podemos impulsar la eficiencia de su proyecto.
+                    Montamos, Mantenemos, Empalmamos: La diferencia esta en los detalles.
                 </p>
                 <Button
                     variant="sim"
