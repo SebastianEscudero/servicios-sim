@@ -22,7 +22,7 @@ export function NavigationMenuLanding() {
                 <NavigationMenuItem>
                         <Button
                             className='justify-start my-[3px] text-[16px] mr-2'
-                            variant={pathname === "/" ? 'sim' : 'ghost'}
+                            variant='outline'
                             onClick={(e) => {
                                 e.preventDefault();
                                 const contactSection = document.getElementById('inicio');
@@ -35,7 +35,7 @@ export function NavigationMenuLanding() {
                         </Button>
                         <Button
                             className='justify-start my-[3px] text-[16px]'
-                            variant={pathname === "/contacto" ? 'sim' : 'ghost'}
+                            variant="sim"
                             onClick={(e) => {
                                 e.preventDefault();
                                 const contactSection = document.getElementById('contact');

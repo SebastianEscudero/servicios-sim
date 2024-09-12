@@ -3,19 +3,43 @@
 import { ChevronRightCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { useEffect, useRef, useState } from "react";
 
 export const LandingHero = () => {
+    const [videoError, setVideoError] = useState(false);
+    const videoRef = useRef(null);
+    useEffect(() => {
+        const videoElement = videoRef.current as HTMLVideoElement | null;
+        if (videoElement) {
+            videoElement.playbackRate = 4.5;
+        }
+    }, []);
     return (
         <div id="inicio" className="text-white h-[90vh] flex flex-col xl:px-[15%] lg:px-[10%] md:px-[8%] px-[5%] items-center md:text-left text-center">
             <div className="absolute top-0 left-0 w-full h-full">
-                <Image
-                    src="/hero-image.jpg"
-                    alt="Hero"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                    className="brightness-75 z-[-1]"
-                />
+                {!videoError && (
+                    <video
+                        ref={videoRef}
+                        src="/hero-video.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        className="absolute w-full h-full object-cover brightness-[60%] object-center z-[-1]"
+                        onError={() => setVideoError(true)}
+                    >
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+                {videoError && (
+                    <Image
+                        src="/hero-image.jpg"
+                        alt="Hero"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                        className="brightness-75 z-[-1]"
+                    />
+                )}
             </div>
             <div className="text-center lg:text-left space-y-5 text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl md:mb-0 mb-5 w-full h-full items-center lg:items-start justify-center flex flex-col z-[1]">
                 <h1 className="font-semibold w-full lg:w-[35vw]">

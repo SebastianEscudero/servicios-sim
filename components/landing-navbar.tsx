@@ -8,7 +8,7 @@ import { Mail, Phone } from "lucide-react";
 
 export const LandingNavbar = () => {
     return (
-        <nav className="py-3 bg-white shadow-custom-1 sticky top-0 z-50 h-[71px]">
+        <nav className="py-3 bg-white shadow-custom-1 sticky top-0 z-50 h-[71px] border">
             <div className="flex items-center justify-between xl:mx-[10%] lg:mx-[7%] md:mx-[5%] mx-[5%] h-[40px]">
                 <div className="flex items-center">
                     {/* <MobileSidebar /> */}
